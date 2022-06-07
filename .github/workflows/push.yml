@@ -1,0 +1,21 @@
+name: Push
+
+on: [push, workflow_dispatch]
+
+env:
+  CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+
+jobs:
+  lint-and-test:
+    name: Lint & Test
+    if: "!contains(github.event.head_commit.message, 'skip ci')"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v2
+      - name: Testing
+        run: |
+          npm install
+          npm run lint
+          npm run test
+          bash <(curl -s https://codecov.io/bash)

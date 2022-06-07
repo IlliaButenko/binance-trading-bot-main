@@ -1,0 +1,29 @@
+{
+  "editor.insertSpaces": true,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "eslint.alwaysShowStatus": true,
+  "files.trimTrailingWhitespace": true,
+  "files.exclude": {},
+  "files.insertFinalNewline": true,
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "search.exclude": {
+    ".git": true,
+    ".build": true,
+    "**/.DS_Store": true,
+    "**/.vscode": true,
+    "**/coverage": true,
+    "**/node_modules": true
+  },
+  "cSpell.words": [
+    "bbands",
+    "Bollinger",
+    "chrisleekr",
+    "MACD",
+    "mrkdwn",
+    "tradingview",
+    "tulind"
+  ],
+  "eslint.format.enable": true,
+  "eslint.codeActionsOnSave.mode": "all"
+}
